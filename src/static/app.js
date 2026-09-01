@@ -67,6 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const activity = button.dataset.activity;
           const email = button.dataset.email;
 
+          console.log(activity)
           try {
             const response = await fetch(
               `/activities/${encodeURIComponent(activity)}/participants/${encodeURIComponent(email)}`,
